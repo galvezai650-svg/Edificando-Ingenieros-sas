@@ -94,14 +94,16 @@ export function Navigation() {
                 {/* Fade vignette - intensifies on hover */}
                 <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)] bg-gradient-to-r from-[#0a1628] via-transparent to-[#0a1628] opacity-70 group-hover/logo:opacity-100 transition-opacity duration-500" />
               </div>
-              {/* Company name */}
-              <div className="hidden sm:block">
-                <h1 className="text-white font-bold text-sm md:text-base leading-tight tracking-tight group-hover/logo:text-emerald-300 transition-colors duration-500">
-                  EDIFICANDO INGENIEROS
-                </h1>
-                <p className="text-emerald-400/70 text-[10px] md:text-xs font-semibold tracking-[0.15em] -mt-0.5 group-hover/logo:text-emerald-400 transition-colors duration-500">
-                  S.A.S. <span className="text-[8px] md:text-[9px] align-super">®</span>
-                </p>
+              {/* Company name - logo image */}
+              <div className="hidden sm:block relative">
+                <Image
+                  src="https://image2url.com/r2/default/images/1775666964100-68071797-c44f-45b7-9149-6971802944b5.png"
+                  alt="Edificando Ingenieros S.A.S."
+                  width={1225}
+                  height={422}
+                  className="h-8 md:h-10 w-auto object-contain opacity-90 group-hover/logo:opacity-100 transition-opacity duration-500"
+                  priority
+                />
               </div>
             </Link>
 
@@ -189,13 +191,14 @@ export function Navigation() {
                     </div>
                     <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)] bg-gradient-to-r from-[#0a1628] via-transparent to-[#0a1628] opacity-70" />
                   </div>
-                  <div>
-                    <h1 className="text-white font-bold text-sm leading-tight tracking-tight">
-                      EDIFICANDO INGENIEROS
-                    </h1>
-                    <p className="text-emerald-400/70 text-[10px] font-semibold tracking-[0.15em] -mt-0.5">
-                      S.A.S. <span className="text-[8px] align-super">®</span>
-                    </p>
+                  <div className="relative">
+                    <Image
+                      src="https://image2url.com/r2/default/images/1775666964100-68071797-c44f-45b7-9149-6971802944b5.png"
+                      alt="Edificando Ingenieros S.A.S."
+                      width={1225}
+                      height={422}
+                      className="h-7 w-auto object-contain opacity-90"
+                    />
                   </div>
                 </div>
                 {navLinks.map((link, i) => (
