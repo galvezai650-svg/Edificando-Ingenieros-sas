@@ -89,3 +89,33 @@ Stage Summary:
 - useFavorites hook restored at src/hooks/useFavorites.ts
 - Total: 10 routes + homepage = 11 pages
 - All routes compile and respond correctly
+
+---
+Task ID: 3
+Agent: Main Agent
+Task: Restore all routes/pages and fix text color visibility issues
+
+Work Log:
+- Explored GitHub repo to identify all 11 page.tsx files under src/app/
+- Downloaded all original page files from raw.githubusercontent.com:
+  - src/app/blog/page.tsx (297 lines)
+  - src/app/blog/[slug]/page.tsx (415 lines)
+  - src/app/contacto/page.tsx (386 lines)
+  - src/app/favoritos/page.tsx (188 lines)
+  - src/app/nosotros/page.tsx (520 lines)
+  - src/app/proceso/page.tsx (386 lines)
+  - src/app/proyectos/page.tsx (292 lines)
+  - src/app/proyectos/[id]/page.tsx (570 lines)
+  - src/app/servicios/page.tsx (348 lines)
+  - src/app/ventas/page.tsx (151 lines)
+- Downloaded original globals.css (169 lines), layout.tsx (28 lines), tailwind.config.ts (80 lines)
+- Identified root cause of text visibility issue: tailwind.config.ts had hsl() wrappers around CSS variables that contain hex values (#0a1628, etc.), creating invalid CSS colors like hsl(#0a1628) which browsers cannot parse
+- Fixed tailwind.config.ts by removing all hsl() wrappers for semantic colors (background, foreground, card, etc.) since @theme inline in globals.css already properly defines these variables
+- Kept only brand colors in tailwind.config.ts (which are explicit hex values, no conflict)
+- Verified all 9 routes return HTTP 200
+- ESLint passes with zero errors
+
+Stage Summary:
+- All routes restored from original GitHub repo
+- Text color issue fixed by resolving hsl()/hex conflict in Tailwind v4 config
+- All routes: /, /servicios, /proyectos, /nosotros, /contacto, /blog, /proceso, /ventas, /favoritos working
