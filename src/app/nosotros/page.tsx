@@ -256,7 +256,7 @@ export default function NosotrosPage() {
               Sector <span className="text-brand-light">Público</span>
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Más de <strong className="text-brand-light">22 proyectos</strong> ejecutados en obras públicas, respaldados por la confianza de instituciones de todo el país.
+              Más de <strong className="text-brand-light">110 proyectos</strong> ejecutados en obras públicas, respaldados por la confianza de instituciones de todo el país.
             </p>
           </motion.div>
 

@@ -272,7 +272,7 @@ function AboutPreview() {
             <p className="text-gray-500 leading-relaxed mb-4 text-lg">
               En <strong className="text-[#0a1628]">Edificando Ingenieros</strong>, somos una empresa colombiana 
               con más de una década de experiencia en el sector de la construcción e ingeniería civil. 
-              Hemos ejecutado más de 22 proyectos entre 2018 y 2023.
+              Hemos ejecutado más de 110 proyectos entre 2013 y 2024.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
               Con presencia en Manizales, Chinchiná, Villamaría, Palestina, Aranzazu y Pereira, 
