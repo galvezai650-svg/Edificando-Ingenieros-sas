@@ -1,0 +1,18 @@
+{
+  "code": 200,
+  "data": {
+    "description": "",
+    "html": "<html><head><meta name=\"color-scheme\" content=\"light dark\"></head><body><pre style=\"word-wrap: break-word; white-space: pre-wrap;\"># 🏗️ Edificando Ingenieros S.A.S.\n\nSitio web corporativo profesional desarrollado para **Edificando Ingenieros S.A.S.**, una empresa colombiana dedicada a la ingeniería civil y construcción, con el objetivo de fortalecer su presencia digital y facilitar la captación de clientes.\n\n---\n\n## 🚀 Descripción del Proyecto\n\nEste proyecto es una plataforma web moderna, rápida y escalable, diseñada con buenas prácticas de desarrollo y una arquitectura clara.  \nCuenta con múltiples secciones informativas, diseño responsive y enfoque comercial.\n\n---\n\n## ✨ Características Principales\n\n- ✅ Arquitectura profesional con rutas separadas\n- ✅ Diseño moderno y corporativo\n- ✅ Totalmente responsive (PC, tablet y móvil)\n- ✅ Navegación clara y estructurada\n- ✅ Botón de contacto directo (WhatsApp)\n- ✅ Preparado para escalar a sistema dinámico\n- ✅ Código limpio y organizado\n- ✅ Sin errores en producción\n\n---\n\n## 🧱 Estructura del Proyecto\n\n- Rutas independientes por sección\n- Componentes reutilizables\n- Separación clara entre lógica, UI y estilos\n- Enfoque en mantenibilidad y escalabilidad\n\nEjemplo de secciones:\n- Inicio\n- Nosotros\n- Servicios\n- Proyectos\n- Ventas\n- Blog\n- Proceso\n- Contacto\n\n---\n\n## 🛠️ Tecnologías Utilizadas\n\n- **Next.js**\n- **TypeScript**\n- **Python**\n- **HTML5**\n- **CSS3**\n- **JavaScript**\n- **Shell**\n- **TeX (documentación)**\n\n---\n\n## 📈 Objetivo del Proyecto\n\n- Representar digitalmente a la empresa de forma profesional  \n- Aumentar la confianza del cliente  \n- Facilitar cotizaciones y contacto  \n- Servir como base para futuras funcionalidades como:\n  - Panel administrativo\n  - Gestión de proyectos\n  - Formularios dinámicos\n  - Backend con base de datos\n\n---\n\n## 💼 Estado del Proyecto\n\n🟢 **En producción / funcional**  \nEl proyecto se encuentra estable, sin errores y listo para uso comercial.\n\n---\n\n## 👨‍💻 Desarrollador\n\n**Oscar David**  \nDesarrollador Full Stack  \n📍 Colombia  \n\n> Proyecto desarrollado con más de 6 años de experiencia en programación y enfoque real en negocio y producto.\n\n---\n\n## 📄 Licencia\n\nEste proyecto es de uso privado y comercial.  \nTodos los derechos reservados.\n\n---\n\n⭐ Si te gusta este proyecto, no olvides dejar una estrella en el repositorio.\n</pre></body></html>",
+    "title": "",
+    "url": "https://raw.githubusercontent.com/galvezai650-svg/Edificando-Ingenieros-sas/main/README.md",
+    "usage": {
+      "tokens": 660
+    }
+  },
+  "meta": {
+    "usage": {
+      "tokens": 660
+    }
+  },
+  "status": 20000
+}
