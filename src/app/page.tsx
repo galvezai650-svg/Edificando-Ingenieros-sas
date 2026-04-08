@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion, useInView, useMotionValue, useTransform, animate, AnimatePresence } from 'framer-motion'
+import { MainLayout } from '@/components/layout/MainLayout'
 import {
   projects, services, testimonials, stats, processSteps, companyInfo,
 } from '@/lib/data'
@@ -982,7 +983,7 @@ function GalleryCarousel() {
 // ═══════════════════════════════════════════════════════════
 export default function HomePage() {
   return (
-    <>
+    <MainLayout>
       <HeroSection />
       <MarqueeSection />
       <AboutPreview />
@@ -992,6 +993,6 @@ export default function HomePage() {
       <ProcessPreview />
       <TestimonialsSection />
       <CTASection />
-    </>
+    </MainLayout>
   )
 }
