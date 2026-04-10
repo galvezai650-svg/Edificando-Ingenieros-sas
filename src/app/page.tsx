@@ -112,16 +112,6 @@ function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-32 md:py-40">
         <div className="max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1, ease: smoothEase }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand/10 border border-brand/20 rounded-full text-brand-light text-sm font-medium mb-8 backdrop-blur-sm"
-          >
-            <Sparkles className="w-4 h-4" />
-            {companyInfo.slogan}
-          </motion.div>
-
           <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] mb-8"
             initial={{ opacity: 0, y: 25 }}
