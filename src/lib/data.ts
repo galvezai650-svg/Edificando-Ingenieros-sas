@@ -48,7 +48,6 @@ export interface BlogPost {
 // COMPANY INFO
 // ═══════════════════════════════════════════════════════════
 export const companyInfo = {
-  slogan: 'Cimentamos confianza, erigimos excelencia',
   name: 'EDIFICANDO Ingenieros S.A.S.',
   shortName: 'Edificando Ingenieros',
   description: 'Sociedad colombiana especializada en la construcción y el diseño de obras civiles, con probada trayectoria y experiencia acreditada en los sectores público y privado del Eje Cafetero.',
