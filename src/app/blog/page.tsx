@@ -97,7 +97,7 @@ export default function BlogPage() {
               </span>
             </h1>
             <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Consejos, guías y novedades del sector construcción para mantenerte informado
+              Artículos de interés, guías técnicas y novedades del sector de la construcción para mantenerle informado
             </p>
           </motion.div>
         </div>
@@ -183,7 +183,7 @@ export default function BlogPage() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl font-bold text-[#0a1628] mb-10"
           >
-            Últimos Artículos
+            Publicaciones Recientes
           </motion.h2>
 
           <div ref={gridRef} className="grid md:grid-cols-2 gap-8">
@@ -264,15 +264,15 @@ export default function BlogPage() {
               <Send className="w-8 h-8 text-brand-light" />
             </div>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-white mb-4">
-              Suscríbete a nuestro newsletter
+              Suscríbase a Nuestro Boletín Informativo
             </h2>
             <p className="text-white/60 text-base mb-8">
-              Recibe artículos, guías y novedades del sector construcción directamente en tu correo.
+              Reciba artículos, guías técnicas y novedades del sector de la construcción directamente en su correo electrónico.
             </p>
             <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <Input
                 type="email"
-                placeholder="Tu correo electrónico"
+                placeholder="Su correo electrónico"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-white/10 border-white/10 text-white placeholder:text-white/40 rounded-full px-5 h-12 focus:border-brand/50 focus:ring-brand/20"
@@ -282,12 +282,12 @@ export default function BlogPage() {
                 type="submit"
                 className="bg-gradient-to-r from-brand to-brand-dark hover:from-brand-dark hover:to-brand-700 text-white px-6 h-12 rounded-full font-semibold shadow-lg shadow-brand/25 hover:shadow-brand/40 transition-all duration-300 whitespace-nowrap"
               >
-                Suscribirme
+                Suscribirse
                 <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
             </form>
             <p className="text-white/30 text-xs mt-4">
-              Sin spam. Puedes darte de baja en cualquier momento.
+              No enviamos correo no deseado. Podrá darse de baja en cualquier momento.
             </p>
           </motion.div>
         </div>

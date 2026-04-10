@@ -52,7 +52,7 @@ const contactInfo = [
   {
     icon: <Clock className="w-6 h-6" />,
     title: 'Horario',
-    lines: ['Lun - Vie: 8:00 - 18:00', 'Sáb: 9:00 - 13:00'],
+    lines: ['Lunes a viernes: 8:00 - 18:00', 'Sábados: 9:00 - 13:00'],
   },
 ]
 
@@ -69,14 +69,14 @@ export default function ContactoPage() {
 
   function validate() {
     const newErrors: Record<string, string> = {}
-    if (!formData.nombre.trim()) newErrors.nombre = 'El nombre es requerido'
+    if (!formData.nombre.trim()) newErrors.nombre = 'Es necesario indicar su nombre'
     if (!formData.email.trim()) {
-      newErrors.email = 'El email es requerido'
+      newErrors.email = 'El correo electrónico es obligatorio'
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Email no válido'
+      newErrors.email = 'Dirección de correo electrónico no válida'
     }
-    if (!formData.asunto) newErrors.asunto = 'Selecciona un asunto'
-    if (!formData.mensaje.trim()) newErrors.mensaje = 'El mensaje es requerido'
+    if (!formData.asunto) newErrors.asunto = 'Seleccione un asunto'
+    if (!formData.mensaje.trim()) newErrors.mensaje = 'Es necesario incluir un mensaje'
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
@@ -93,19 +93,19 @@ export default function ContactoPage() {
         body: JSON.stringify(formData),
       })
       if (res.ok) {
-        toast.success('Mensaje enviado exitosamente', {
-          description: 'Nos pondremos en contacto contigo pronto.',
+        toast.success('Mensaje enviado con éxito', {
+          description: 'Nos pondremos en contacto con usted a la mayor brevedad posible.',
         })
         setFormData({ nombre: '', email: '', telefono: '', asunto: '', mensaje: '' })
         setErrors({})
       } else {
-        toast.error('Error al enviar', {
-          description: 'Inténtalo de nuevo más tarde.',
+        toast.error('Error en el envío', {
+          description: 'Le rogamos lo intente nuevamente más tarde.',
         })
       }
     } catch {
-      toast.error('Error de conexión', {
-        description: 'Verifica tu conexión a internet.',
+      toast.error('Sin conexión a la red', {
+        description: 'Le sugerimos verificar su conexión a internet.',
       })
     } finally {
       setIsSubmitting(false)
@@ -143,10 +143,10 @@ export default function ContactoPage() {
               <span className="text-white/70">Contacto</span>
             </div>
             <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-bold text-white mb-6">
-              Contác<span className="text-brand-light">tanos</span>
+              Contáct<span className="text-brand-light">enos</span>
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              Estamos listos para escucharte. Cuéntanos sobre tu proyecto y te responderemos a la brevedad.
+              Nos complace poner nuestra firma a su entera disposición. Cuéntenos acerca de su proyecto y le brindaremos respuesta a la mayor brevedad.
             </p>
           </motion.div>
         </div>
@@ -167,9 +167,9 @@ export default function ContactoPage() {
               <Card className="bg-white border-0 shadow-lg rounded-3xl p-8 md:p-10">
                 <CardContent className="p-0">
                   <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl font-bold text-[#0a1628] mb-2">
-                    Envíanos un mensaje
+                    Remita su consulta
                   </h2>
-                  <p className="text-gray-500 mb-8">Completa el formulario y te responderemos en menos de 24 horas.</p>
+                  <p className="text-gray-500 mb-8">Diligencie el formulario adjunto y le responderemos en un plazo no superior a veinticuatro horas.</p>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-6">
@@ -179,7 +179,7 @@ export default function ContactoPage() {
                         </Label>
                         <Input
                           id="nombre"
-                          placeholder="Tu nombre completo"
+                          placeholder="Su nombre completo"
                           value={formData.nombre}
                           onChange={e => handleChange('nombre', e.target.value)}
                           className={`rounded-xl h-12 ${errors.nombre ? 'border-red-400 focus-visible:ring-red-400' : 'focus-visible:ring-brand'}`}
@@ -188,12 +188,12 @@ export default function ContactoPage() {
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email" className="text-[#0a1628] font-medium">
-                          Email <span className="text-red-500">*</span>
+                          Correo Electrónico <span className="text-red-500">*</span>
                         </Label>
                         <Input
                           id="email"
                           type="email"
-                          placeholder="tu@email.com"
+                          placeholder="su@email.com"
                           value={formData.email}
                           onChange={e => handleChange('email', e.target.value)}
                           className={`rounded-xl h-12 ${errors.email ? 'border-red-400 focus-visible:ring-red-400' : 'focus-visible:ring-brand'}`}
@@ -224,12 +224,12 @@ export default function ContactoPage() {
                           onValueChange={v => handleChange('asunto', v)}
                         >
                           <SelectTrigger className={`w-full rounded-xl h-12 ${errors.asunto ? 'border-red-400' : ''}`}>
-                            <SelectValue placeholder="Selecciona un asunto" />
+                            <SelectValue placeholder="Seleccione un asunto" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="cotizacion">Cotización</SelectItem>
-                            <SelectItem value="consulta">Consulta</SelectItem>
-                            <SelectItem value="soporte">Soporte</SelectItem>
+                            <SelectItem value="cotizacion">Solicitud de Cotización</SelectItem>
+                            <SelectItem value="consulta">Consulta General</SelectItem>
+                            <SelectItem value="soporte">Asistencia Técnica</SelectItem>
                             <SelectItem value="otro">Otro</SelectItem>
                           </SelectContent>
                         </Select>
@@ -243,7 +243,7 @@ export default function ContactoPage() {
                       </Label>
                       <Textarea
                         id="mensaje"
-                        placeholder="Cuéntanos sobre tu proyecto o consulta..."
+                        placeholder="Cuéntenos acerca de su proyecto o consulta..."
                         rows={5}
                         value={formData.mensaje}
                         onChange={e => handleChange('mensaje', e.target.value)}
@@ -265,7 +265,7 @@ export default function ContactoPage() {
                       ) : (
                         <>
                           <Send className="w-4 h-4 mr-2" />
-                          Enviar Mensaje
+                          Enviar Consulta
                         </>
                       )}
                     </Button>
@@ -328,7 +328,7 @@ export default function ContactoPage() {
                         </div>
                         <div>
                           <h3 className="font-semibold text-lg">WhatsApp</h3>
-                          <p className="text-white/80 text-sm">Chatea con nosotros ahora</p>
+                          <p className="text-white/80 text-sm">Comuníquese con nosotros</p>
                         </div>
                       </div>
                     </CardContent>
@@ -354,10 +354,10 @@ export default function ContactoPage() {
               Ubicación
             </Badge>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#0a1628] mb-4">
-              Encuéntranos
+              Nuestras Oficinas
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Visita nuestras oficinas en Cra 9 #14-20. Estamos siempre disponibles para atenderte.
+              Le invitamos a visitar nuestras oficinas en Cra 9 #14-20. Nuestro equipo se encuentra siempre a su disposición para atenderle.
             </p>
           </motion.div>
 

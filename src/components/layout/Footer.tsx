@@ -47,10 +47,10 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <h3 className="text-xl md:text-2xl font-bold text-white">
-              ¿Listo para construir tu proyecto?
+              ¿Desea emprender la construcción de su proyecto?
             </h3>
             <p className="text-white/80 text-sm mt-1">
-              Contáctanos hoy y hagamos realidad tu visión
+              Contáctenos y materialicemos juntos su visión
             </p>
           </div>
           <Link
@@ -80,8 +80,8 @@ export function Footer() {
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Empresa líder en ingeniería y construcción en Colombia con más de 10 años de
-              experiencia. Transformamos ideas en obras maestras de la ingeniería moderna.
+              Empresa referente en ingeniería y construcción en Colombia, con más de una década de trayectoria.
+              Convertimos ideas en obras de excelencia que transforman el entorno y elevan los estándares de la ingeniería moderna.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
@@ -182,7 +182,7 @@ export function Footer() {
                   <div className="w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
                     <div className="w-2 h-2 rounded-full bg-emerald-500" />
                   </div>
-                  <span>Lun - Vie: 8:00 AM - 6:00 PM</span>
+                  <span>Lunes a viernes: 8:00 a. m. - 6:00 p. m.</span>
                 </div>
               </div>
             </div>

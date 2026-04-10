@@ -58,7 +58,7 @@ export function Navigation() {
             </span>
             <span className="flex items-center gap-1.5">
               <Clock className="w-3 h-3" />
-              <span>Lun - Vie: 8:00 - 18:00</span>
+              <span>Lunes a viernes: 8:00 - 18:00</span>
             </span>
           </div>
         </div>

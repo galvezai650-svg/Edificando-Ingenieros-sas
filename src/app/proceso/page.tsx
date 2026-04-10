@@ -46,9 +46,9 @@ const expandedSteps = [
     number: 1,
     icon: 'Lightbulb',
     title: 'Conociendo su Idea',
-    description: 'Escuchamos tus ideas y te asesoramos para dar forma al proyecto. Analizamos tus necesidades, presupuesto y plazos.',
+    description: 'Escuchamos sus ideas y le asesoramos para dar forma al proyecto. Analizamos sus necesidades, presupuesto y plazos.',
     fullDescription:
-      'En esta primera etapa, nuestro equipo se reúne contigo para escuchar tus ideas y comprender a profundidad tus necesidades. Te asesoramos para dar forma al proyecto, analizando la viabilidad técnica, evaluando las condiciones del terreno, definiendo presupuesto y plazos estimados. Es un espacio de diálogo abierto donde tu visión se convierte en el punto de partida de un proyecto exitoso.',
+      'En esta primera etapa, nuestro equipo se reúne con usted para escuchar sus ideas y comprender a profundidad sus necesidades. Le asesoramos para dar forma al proyecto, analizando la viabilidad técnica, evaluando las condiciones del terreno, definiendo presupuesto y plazos estimados. Es un espacio de diálogo abierto donde su visión se convierte en el punto de partida de un proyecto exitoso.',
   },
   {
     number: 2,
@@ -56,15 +56,15 @@ const expandedSteps = [
     title: 'Ante-proyecto',
     description: 'Realizamos diseños con la normativa vigente y elaboramos un presupuesto detallado y transparente.',
     fullDescription:
-      'Con base en tus ideas, realizamos los primeros diseños y bocetos del proyecto. Todos los planos se desarrollan cumpliendo la normativa vigente (NSR-10, RAS, INVIAS). Paralelamente, elaboramos un presupuesto detallado y transparente que te permite tomar decisiones informadas sobre la inversión.',
+      'Con base en sus ideas, realizamos los primeros diseños y bocetos del proyecto. Todos los planos se desarrollan cumpliendo la normativa vigente (NSR-10, RAS, INVIAS). Paralelamente, elaboramos un presupuesto detallado y transparente que le permite tomar decisiones informadas sobre la inversión.',
   },
   {
     number: 3,
     icon: 'FileText',
     title: 'Culminación de Diseños',
-    description: 'Exponemos el proyecto completo, permitimos modificaciones y ofrecemos asesoría permanente para tu aprobación.',
+    description: 'Exponemos el proyecto completo, permitimos modificaciones y ofrecemos asesoría permanente para su aprobación.',
     fullDescription:
-      'Presentamos el proyecto completo con planos detallados, memorias de cálculo, renders 3D y especificaciones técnicas. Permitimos modificaciones y ajustes hasta que estés completamente satisfecho con el resultado. Nuestro equipo de ingenieros te ofrece asesoría permanente para resolver cualquier inquietud técnica.',
+      'Presentamos el proyecto completo con planos detallados, memorias de cálculo, renders 3D y especificaciones técnicas. Permitimos modificaciones y ajustes hasta que usted quede completamente satisfecho con el resultado. Nuestro equipo de ingenieros le ofrece asesoría permanente para resolver cualquier inquietud técnica.',
   },
   {
     number: 4,
@@ -80,7 +80,7 @@ const expandedSteps = [
     title: 'Construcción',
     description: 'Ejecución de actividades con equipo capacitado y seguimiento continuo de calidad y avances.',
     fullDescription:
-      'Con los permisos obtenidos y los planos aprobados, iniciamos la construcción. Contamos con un equipo de profesionales capacitados que ejecuta cada actividad con los más altos estándares de calidad y seguridad. Implementamos un sistema de seguimiento continuo con reportes de avance periódicos para que estés siempre informado del estado de tu proyecto.',
+      'Con los permisos obtenidos y los planos aprobados, iniciamos la construcción. Contamos con un equipo de profesionales capacitados que ejecuta cada actividad con los más altos estándares de calidad y seguridad. Implementamos un sistema de seguimiento continuo con reportes de avance periódicos para que usted permanezca siempre informado del estado de su proyecto.',
   },
   {
     number: 6,
@@ -88,14 +88,14 @@ const expandedSteps = [
     title: 'Entrega',
     description: 'Recorrido final, entrega de estudios, planos, registro fotográfico y garantías por escrito.',
     fullDescription:
-      'Realizamos un recorrido final conjunto para verificar cada detalle de la obra. Te entregamos todos los estudios, planos, memorias técnicas y el registro fotográfico completo del proceso. Formalizamos las garantías por escrito y te capacitamos sobre el uso y mantenimiento de las instalaciones. Nuestro compromiso no termina con la entrega: ofrecemos soporte post-venta.',
+      'Realizamos un recorrido final conjunto para verificar cada detalle de la obra. Le entregamos todos los estudios, planos, memorias técnicas y el registro fotográfico completo del proceso. Formalizamos las garantías por escrito y le capacitamos sobre el uso y mantenimiento de las instalaciones. Nuestro compromiso no termina con la entrega: ofrecemos soporte post-venta.',
   },
 ]
 
 const faqs = [
   {
     question: '¿Cuánto tiempo toma un proyecto de construcción?',
-    answer: 'El tiempo varía según la complejidad y envergadura del proyecto. Una vivienda puede tomar entre 8 y 16 meses, mientras que proyectos de infraestructura pueden extenderse de 12 a 36 meses. En la consulta inicial te proporcionamos un cronograma detallado y realista.',
+    answer: 'El tiempo varía según la complejidad y envergadura del proyecto. Una vivienda puede tomar entre 8 y 16 meses, mientras que proyectos de infraestructura pueden extenderse de 12 a 36 meses. En la consulta inicial le proporcionamos un cronograma detallado y realista.',
   },
   {
     question: '¿Qué garantías ofrecen en sus proyectos?',
@@ -107,7 +107,7 @@ const faqs = [
   },
   {
     question: '¿Cómo es el proceso de cotización?',
-    answer: 'Es simple y sin costo. Contáctanos por nuestro formulario, WhatsApp o teléfono. Agendamos una reunión para conocer tu proyecto, realizamos un análisis preliminar y en un plazo de 5 a 10 días hábiles te entregamos una cotización detallada y transparente.',
+    answer: 'Es simple y sin costo. Contáctenos por nuestro formulario, WhatsApp o teléfono. Agendamos una reunión para conocer su proyecto, realizamos un análisis preliminar y en un plazo de 5 a 10 días hábiles le entregamos una cotización detallada y transparente.',
   },
   {
     question: '¿Ofrecen financiamiento o planes de pago?',
@@ -115,7 +115,7 @@ const faqs = [
   },
   {
     question: '¿Qué permisos y licencias gestionan?',
-    answer: 'Nos encargamos de todo el proceso de licenciamiento ante las autoridades competentes: licencias de construcción, aprobaciones ambientales, diseños técnicos aprobados, certificados de habitabilidad y todos los trámites necesarios para que tu proyecto cumpla con la normativa vigente.',
+    answer: 'Nos encargamos de todo el proceso de licenciamiento ante las autoridades competentes: licencias de construcción, aprobaciones ambientales, diseños técnicos aprobados, certificados de habitabilidad y todos los trámites necesarios para que su proyecto cumpla con la normativa vigente.',
   },
 ]
 
@@ -152,7 +152,7 @@ export default function ProcesoPage() {
               Nuestro <span className="text-brand-light">Proceso</span>
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              Un proceso estructurado, transparente y eficiente que garantiza el éxito de tu proyecto desde la primera reunión hasta la entrega final.
+              Un proceso estructurado, transparente y eficiente que garantiza el éxito de su proyecto desde la primera reunión hasta la entrega final.
             </p>
           </motion.div>
         </div>
@@ -172,7 +172,7 @@ export default function ProcesoPage() {
               Metodología
             </Badge>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#0a1628] mb-4">
-              6 pasos hacia tu proyecto ideal
+              6 pasos hacia su proyecto ideal
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               Cada fase está diseñada para asegurar calidad, eficiencia y comunicación constante.
@@ -273,7 +273,7 @@ export default function ProcesoPage() {
               ¿Qué nos hace diferentes?
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Cada aspecto de nuestro proceso está optimizado para garantizar tu tranquilidad y el éxito de tu inversión.
+              Cada aspecto de nuestro proceso está optimizado para garantizar su tranquilidad y el éxito de su inversión.
             </p>
           </motion.div>
 
@@ -319,7 +319,7 @@ export default function ProcesoPage() {
               Preguntas Frecuentes
             </Badge>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#0a1628] mb-4">
-              ¿Tienes dudas?
+              ¿Tiene alguna duda?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               Resolvemos las preguntas más comunes sobre nuestro proceso de construcción.
@@ -367,10 +367,10 @@ export default function ProcesoPage() {
             transition={{ ease, duration }}
           >
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-5xl font-bold text-white mb-6">
-              Comienza tu proyecto <span className="text-brand-light">hoy</span>
+              Inicie su proyecto <span className="text-brand-light">hoy</span>
             </h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-10">
-              Da el primer paso hacia el proyecto de tus sueños. Agenda tu consulta inicial sin costo ni compromiso.
+              Dé el primer paso hacia el proyecto de sus sueños. Agende su consulta inicial sin costo ni compromiso.
             </p>
             <Button asChild size="lg" className="bg-brand hover:bg-brand-dark text-white rounded-full px-10 text-lg h-14">
               <Link href="/contacto">

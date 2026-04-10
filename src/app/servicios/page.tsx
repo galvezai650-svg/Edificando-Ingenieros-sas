@@ -56,40 +56,40 @@ const categoryLabels: Record<string, { letter: string; title: string; descriptio
   construccion: {
     letter: 'A',
     title: 'Servicios de Construcción',
-    description: 'Construimos, remodelamos y ejecutamos proyectos de obra civil con los más altos estándares de calidad.',
+    description: 'Ejecutamos, remodelamos y levantamos proyectos de obra civil con los más rigurosos estándares de calidad.',
   },
   disenos: {
     letter: 'B',
     title: 'Diseños y Estudios',
-    description: 'Desarrollamos estudios técnicos y diseños especializados que fundamentan cada proyecto.',
+    description: 'Elaboramos estudios técnicos y diseños especializados que sustentan la viabilidad de cada proyecto.',
   },
   adicionales: {
     letter: 'C',
-    title: 'Servicios Adicionales',
-    description: 'Ofrecemos servicios complementarios que completan y potencian tu proyecto.',
+    title: 'Servicios Complementarios',
+    description: 'Brindamos servicios complementarios que perfeccionan y optimizan cada proyecto.',
   },
 }
 
 const benefits = [
   {
     icon: <Shield className="w-8 h-8" />,
-    title: 'Calidad Garantizada',
-    description: 'Cada proyecto se ejecuta bajo estrictos protocolos de calidad certificados bajo normas vigentes.',
+    title: 'Calidad Certificada',
+    description: 'Cada proyecto se ejecuta bajo protocolos de calidad rigurosos, certificados conforme a la normatividad vigente.',
   },
   {
     icon: <DollarSign className="w-8 h-8" />,
-    title: 'Precios Competitivos',
-    description: 'Optimizamos recursos y procesos para ofrecerte la mejor relación calidad-precio del mercado.',
+    title: 'Tarifas Competitivas',
+    description: 'Optimizamos recursos y procesos para ofrecerle la más favorable relación entre calidad e inversión del mercado.',
   },
   {
     icon: <Clock className="w-8 h-8" />,
-    title: 'Entrega a Tiempo',
-    description: 'Nuestra planificación meticulosa y control de avances garantizan el cumplimiento de cronogramas.',
+    title: 'Entrega Puntual',
+    description: 'Nuestra planificación exhaustiva y el control riguroso de avances garantizan el cumplimiento cabal de los cronogramas.',
   },
   {
     icon: <Headphones className="w-8 h-8" />,
-    title: 'Soporte Post-venta',
-    description: 'Acompañamiento continuo después de la entrega con garantía técnica y asesoría permanente.',
+    title: 'Asistencia Postventa',
+    description: 'Acompañamiento continuo tras la entrega, con garantía técnica y asesoría profesional permanente.',
   },
 ]
 
@@ -134,7 +134,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
             ))}
             {service.features.length > 4 && (
               <Badge variant="secondary" className="bg-brand/10 text-brand-dark hover:bg-brand/10 text-xs rounded-full font-normal">
-                +{service.features.length - 4} más
+                +{service.features.length - 4} adicionales
               </Badge>
             )}
           </div>
@@ -175,7 +175,7 @@ export default function ServiciosPage() {
               Nuestros <span className="text-brand-light">Servicios</span>
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              Soluciones integrales de construcción, diseño e ingeniería civil con los más altos estándares de calidad y profesionalismo.
+              Soluciones integrales de construcción, diseño e ingeniería civil, concebidas bajo los más exigentes estándares de calidad y rigor profesional.
             </p>
           </motion.div>
         </div>
@@ -261,7 +261,7 @@ export default function ServiciosPage() {
 
           {filteredServices.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-gray-500 text-lg">No se encontraron servicios en esta categoría.</p>
+              <p className="text-gray-500 text-lg">No se encontraron servicios correspondientes a esta categoría.</p>
             </div>
           )}
         </div>
@@ -278,13 +278,13 @@ export default function ServiciosPage() {
             className="text-center mb-16"
           >
             <Badge className="bg-brand-100 text-brand-700 hover:bg-brand-100 mb-4">
-              ¿Por qué elegirnos?
+              ¿Por qué confiar en nosotros?
             </Badge>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#0a1628] mb-4">
-              Beneficios de trabajar con nosotros
+              Ventajas de colaborar con nosotros
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Nos diferenciamos por nuestro compromiso con la excelencia en cada aspecto del proceso constructivo.
+              Nos distinguimos por nuestro compromiso irrestricto con la excelencia en cada fase del proceso constructivo.
             </p>
           </motion.div>
 
@@ -329,10 +329,10 @@ export default function ServiciosPage() {
             transition={{ ease, duration }}
           >
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-5xl font-bold text-white mb-6">
-              ¿Necesitas un servicio <span className="text-brand-light">específico</span>?
+              ¿Requiere algún servicio <span className="text-brand-light">en particular</span>?
             </h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-10">
-              Contáctanos y te asesoraremos sobre la mejor solución para tu proyecto. Sin compromiso.
+              Contáctenos y le brindaremos asesoría sobre la solución más idónea para su proyecto, sin compromiso alguno.
             </p>
             <Button asChild size="lg" className="bg-brand hover:bg-brand-dark text-white rounded-full px-10 text-lg h-14">
               <Link href="/contacto">

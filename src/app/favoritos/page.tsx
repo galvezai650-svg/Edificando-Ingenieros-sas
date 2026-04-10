@@ -50,10 +50,10 @@ export default function FavoritosPage() {
               <span className="text-white/70">Favoritos</span>
             </div>
             <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-bold text-white mb-6">
-              Mis <span className="text-brand-light">Favoritos</span>
+              Sus <span className="text-brand-light">Favoritos</span>
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              Aquí encuentras todos los proyectos que has guardado para revisar más adelante.
+              En esta sección encontrará todos los proyectos que ha guardado para su posterior consulta.
             </p>
           </motion.div>
         </div>
@@ -75,7 +75,7 @@ export default function FavoritosPage() {
                   <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl font-bold text-[#0a1628]">
                     {favoriteProjects.length} {favoriteProjects.length === 1 ? 'proyecto guardado' : 'proyectos guardados'}
                   </h2>
-                  <p className="text-gray-500 mt-1">Tus proyectos seleccionados</p>
+                  <p className="text-gray-500 mt-1">Sus proyectos seleccionados</p>
                 </div>
                 <Badge variant="secondary" className="bg-brand-100 text-brand-700 text-sm rounded-full px-4 py-1.5">
                   <Heart className="w-3.5 h-3.5 mr-1.5 fill-brand text-brand" />
@@ -168,15 +168,15 @@ export default function FavoritosPage() {
                 <BookmarkX className="w-12 h-12 text-gray-300" />
               </motion.div>
               <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl font-bold text-[#0a1628] mb-4">
-                No tienes favoritos guardados
+                No cuenta con proyectos favoritos guardados
               </h2>
               <p className="text-gray-500 max-w-md mx-auto mb-10 text-lg">
-                Explora nuestros proyectos y guarda los que más te gusten haciendo clic en el corazón.
+                Explore nuestro portafolio de proyectos y guarde aquellos de su interés seleccionando el ícono de favoritos.
               </p>
               <Button asChild className="bg-brand hover:bg-brand-dark text-white rounded-full px-8 h-12">
                 <Link href="/">
                   <Search className="w-4 h-4 mr-2" />
-                  Explorar Proyectos
+                  Explorar Portafolio
                 </Link>
               </Button>
             </motion.div>

@@ -70,22 +70,22 @@ const values = [
   {
     icon: <Shield className="w-8 h-8" />,
     title: 'Excelencia',
-    description: 'Nos comprometemos con los más altos estándares de calidad en cada proyecto, superando las expectativas de nuestros clientes.',
+    description: 'Nos comprometemos con los más rigurosos estándares de calidad en cada proyecto, con el propósito de exceder las expectativas de nuestros comitentes.',
   },
   {
     icon: <Heart className="w-8 h-8" />,
     title: 'Compromiso',
-    description: 'Cada proyecto es una responsabilidad que asumimos con dedicación total, cumpliendo plazos y presupuestos acordados.',
+    description: 'Cada proyecto entraña una responsabilidad que asumimos con dedicación integral, cumpliendo escrupulosamente los plazos y presupuestos convenidos.',
   },
   {
     icon: <Lightbulb className="w-8 h-8" />,
     title: 'Innovación',
-    description: 'Incorporamos las últimas tecnologías y metodologías constructivas para ofrecer soluciones vanguardistas y eficientes.',
+    description: 'Incorporamos la tecnología de vanguardia y las metodologías constructivas más adelantadas para ofrecer soluciones innovadoras, eficientes y sostenibles.',
   },
   {
     icon: <Award className="w-8 h-8" />,
     title: 'Confianza',
-    description: 'Construimos relaciones sólidas basadas en la transparencia, honestidad y resultados comprobables a lo largo de 10+ años.',
+    description: 'Erigimos relaciones sólidas fundamentadas en la transparencia, la rectitud y resultados comprobables a lo largo de más de diez años.',
   },
 ]
 
@@ -110,10 +110,10 @@ export default function NosotrosPage() {
               <span className="text-white/70">Nosotros</span>
             </div>
             <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-bold text-white mb-6">
-              Sobre <span className="text-brand-light">Nosotros</span>
+              Quiénes <span className="text-brand-light">Somos</span>
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              {companyInfo.name} es una empresa dedicada a la construcción y diseño de obras civiles con amplia experiencia en el sector público y privado. Operamos en el Eje Cafetero Colombiano, específicamente en el departamento de Caldas y zonas aledañas como Boyacá, Risaralda y Valle del Cauca.
+              {companyInfo.name} es una firma especializada en la construcción y el diseño de obras civiles, con amplia trayectoria y experiencia acreditada en los sectores público y privado. Desarrollamos nuestra labor en el Eje Cafetero colombiano, con sede en el departamento de Caldas y alcance en regiones circundantes como Boyacá, Risaralda y Valle del Cauca.
             </p>
           </motion.div>
         </div>
@@ -138,7 +138,7 @@ export default function NosotrosPage() {
                     Nuestra Misión
                   </h2>
                   <p className="text-white/70 leading-relaxed text-lg">
-                    Transformar ideas en realidad a través de soluciones de ingeniería innovadoras y sostenibles, entregando proyectos que superen las expectativas de nuestros clientes y generen un impacto positivo en las comunidades donde operamos.
+                    Convertir ideas en obras mediante soluciones de ingeniería innovadoras y sostenibles, entregando proyectos que superen las expectativas de nuestros comitentes y redunden en un impacto positivo para las comunidades en las que operamos.
                   </p>
                 </CardContent>
               </Card>
@@ -159,7 +159,7 @@ export default function NosotrosPage() {
                     Nuestra Visión
                   </h2>
                   <p className="text-white/70 leading-relaxed text-lg">
-                    Ser la empresa de ingeniería y construcción líder en Colombia, reconocida internacionalmente por nuestra excelencia operativa, innovación tecnológica y compromiso con el desarrollo sostenible del sector constructor.
+                    Constituirse en la empresa de ingeniería y construcción de referencia en Colombia, reconocida a nivel nacional e internacional por su excelencia operativa, su innovación tecnológica y su compromiso irrestricto con el desarrollo sostenible del sector constructor.
                   </p>
                 </CardContent>
               </Card>
@@ -194,7 +194,7 @@ export default function NosotrosPage() {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-brand text-white rounded-2xl p-6 shadow-xl">
                 <div className="font-[family-name:var(--font-playfair)] text-3xl font-bold">10+</div>
-                <div className="text-sm opacity-90">Años de experiencia</div>
+                <div className="text-sm opacity-90">Años de trayectoria</div>
               </div>
             </motion.div>
 
@@ -208,24 +208,24 @@ export default function NosotrosPage() {
                 Nuestra Historia
               </Badge>
               <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#0a1628] mb-6">
-                Construyendo el futuro desde <span className="text-brand">2013</span>
+                Edificando el porvenir desde <span className="text-brand">2013</span>
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  {companyInfo.name} nació en {companyInfo.founded} con la visión de transformar el sector de la construcción en Colombia. Fundada en Chinchiná, Caldas, en el corazón del Eje Cafetero, nuestra empresa comenzó como un estudio de diseño estructural y hoy es una firma integral de ingeniería y construcción.
+                  {companyInfo.name} fue fundada en {companyInfo.founded} con el propósito de transformar el sector de la construcción en Colombia. Constituida en Chinchiná, Caldas, en el corazón del Eje Cafetero, la empresa inició sus actividades como un estudio de diseño estructural y en la actualidad se consolida como una firma integral de ingeniería y construcción.
                 </p>
                 <p>
-                  A lo largo de más de una década, hemos ejecutado obras públicas de gran envergadura, ganándonos la confianza de alcaldías, gobernaciones y empresas de todo el país. Nuestro equipo de más de 35 profesionales especializados opera en el Eje Cafetero Colombiano y zonas aledañas.
+                  A lo largo de más de una década, hemos ejecutado obras públicas de gran envergadura, mereciendo la confianza de alcaldías, gobernaciones y entidades corporativas de todo el país. Nuestro equipo, conformado por más de treinta y cinco profesionales especializados, opera en el Eje Cafetero colombiano y regiones circundantes.
                 </p>
                 <p>
-                  Nuestro enfoque en la innovación, la sostenibilidad y la satisfacción del cliente nos ha permitido completar más de 250 proyectos exitosos, desde viviendas campestres hasta grandes infraestructuras urbanas, ganándonos la confianza de más de 180 clientes.
+                  Nuestro enfoque en la innovación, la sostenibilidad y la plena satisfacción del comitente nos ha permitido concluir con éxito más de doscientos cincuenta proyectos, desde viviendas campestres hasta grandes infraestructuras urbanas, ganándonos la confianza de más de ciento ochenta clientes.
                 </p>
               </div>
 
               <div className="mt-8">
                 <Button asChild className="bg-[#0a1628] hover:bg-[#0f2340] rounded-full px-8">
                   <Link href="/contacto">
-                    Conoce más sobre nosotros
+                    Conozca más sobre nosotros
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
@@ -250,13 +250,13 @@ export default function NosotrosPage() {
             className="text-center mb-16"
           >
             <Badge className="bg-brand/20 text-brand-light border-brand/30 hover:bg-brand/20 mb-4">
-              Experiencia Comprobada
+              Experiencia Acreditada
             </Badge>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-white mb-4">
               Sector <span className="text-brand-light">Público</span>
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Más de <strong className="text-brand-light">110 proyectos</strong> ejecutados en obras públicas, respaldados por la confianza de instituciones de todo el país.
+              Más de <strong className="text-brand-light">ciento diez proyectos</strong> ejecutados en obras públicas, respaldados por la confianza de entidades institucionales de todo el país.
             </p>
           </motion.div>
 
@@ -297,7 +297,7 @@ export default function NosotrosPage() {
                   <div className="w-12 h-12 bg-brand/20 rounded-2xl flex items-center justify-center mb-4">
                     <Building2 className="w-6 h-6 text-brand-light" />
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-4">Empresas</h3>
+                  <h3 className="text-lg font-bold text-white mb-4">Entidades Corporativas</h3>
                   <div className="flex flex-wrap gap-2">
                     {publicSector.clients.empresas.map((empresa) => (
                       <span key={empresa} className="px-2.5 py-1 bg-white/5 text-white/70 text-xs rounded-lg border border-white/10">
@@ -350,8 +350,8 @@ export default function NosotrosPage() {
             transition={{ ease, duration }}
             className="text-center mb-12"
           >
-            <p className="text-brand-light text-sm font-semibold uppercase tracking-widest mb-2">Periodo 2018 - 2023</p>
-            <p className="text-white/50 text-base">Resultados de nuestra trayectoria en el sector público y privado</p>
+            <p className="text-brand-light text-sm font-semibold uppercase tracking-widest mb-2">Período 2018 - 2023</p>
+            <p className="text-white/50 text-base">Resultados de nuestra trayectoria en los ámbitos público y privado</p>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
@@ -390,10 +390,10 @@ export default function NosotrosPage() {
               Nuestros Valores
             </Badge>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#0a1628] mb-4">
-              Lo que nos define
+              Los principios que nos definen
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Nuestros valores fundamentales guían cada decisión y acción, asegurando la máxima calidad en todos nuestros proyectos.
+              Nuestros valores fundamentales orientan cada decisión y cada acción, garantizando la más alta calidad en la totalidad de nuestros proyectos.
             </p>
           </motion.div>
 
@@ -439,10 +439,10 @@ export default function NosotrosPage() {
               Testimonios
             </Badge>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#0a1628] mb-4">
-              Lo que dicen nuestros clientes
+              Testimonios de nuestros clientes
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              La satisfacción de nuestros clientes es nuestra mejor carta de presentación y nuestro mayor motivo de orgullo.
+              La plena satisfacción de nuestros clientes constituye nuestra mejor carta de presentación y el mayor motivo de orgullo institucional.
             </p>
           </motion.div>
 
@@ -498,10 +498,10 @@ export default function NosotrosPage() {
             transition={{ ease, duration }}
           >
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-5xl font-bold text-white mb-6">
-              ¿Listo para trabajar con <span className="text-brand-light">nosotros</span>?
+              ¿Desea emprender un proyecto <span className="text-brand-light">con nosotros</span>?
             </h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-4">
-              Cuéntanos sobre tu proyecto y juntos haremos realidad tus ideas. Estamos listos para comenzar.
+              Cuéntenos acerca de su proyecto y, de manera conjunta, materializaremos su visión. Nos encontramos a su entera disposición para iniciar.
             </p>
             <p className="text-brand-light/80 text-lg max-w-2xl mx-auto mb-10 italic">
               &ldquo;{companyInfo.message}&rdquo;

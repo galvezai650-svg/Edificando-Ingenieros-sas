@@ -380,10 +380,10 @@ export default function BlogArticlePage() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              ¿Necesitas asesoría profesional?
+              ¿Requiere asesoría profesional?
             </h2>
             <p className="text-white/60 text-lg mb-10 max-w-2xl mx-auto">
-              Nuestro equipo de expertos está listo para brindarte la orientación que necesitas para tu próximo proyecto.
+              Nuestro equipo de expertos se encuentra preparado para brindarle la orientación que requiera para su próximo proyecto.
             </p>
             <Link href="/contacto">
               <Button

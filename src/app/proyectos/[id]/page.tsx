@@ -471,10 +471,10 @@ export default function ProjectDetailPage() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              ¿Te interesa un proyecto similar?
+              ¿Le interesa un proyecto similar?
             </h2>
             <p className="text-white/60 text-lg mb-10 max-w-2xl mx-auto">
-              Contáctanos y te asesoramos en la materialización de tu próximo proyecto con los más altos estándares de calidad.
+              Póngase en contacto con nosotros y le brindaremos asesoría para la materialización de su próximo proyecto con los más altos estándares de calidad.
             </p>
             <Link href="/contacto">
               <Button

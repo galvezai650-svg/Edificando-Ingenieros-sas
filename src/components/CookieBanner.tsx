@@ -47,12 +47,12 @@ export function CookieBanner() {
                 🍪 Aviso de Cookies
               </h4>
               <p className="text-gray-500 text-xs leading-relaxed">
-                Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación, analizar el tráfico del sitio y personalizar contenido. Puedes aceptar todas las cookies o rechazarlas. 
-                Consulta nuestra{' '}
+                Utilizamos cookies propias y de terceros para mejorar su experiencia de navegación, analizar el tráfico del sitio y personalizar el contenido. Puede aceptar todas las cookies o rechazarlas. 
+                Consulte nuestra{' '}
                 <a href="#" className="text-brand-dark hover:text-brand-700 underline underline-offset-2">
                   Política de Privacidad
                 </a>{' '}
-                para más información.
+                para mayor información.
               </p>
             </div>
 

@@ -270,10 +270,10 @@ export default function ProyectosPage() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              ¿Tienes un proyecto en mente?
+              ¿Desea emprender un nuevo proyecto?
             </h2>
             <p className="text-white/60 text-lg mb-10 max-w-2xl mx-auto">
-              Conversemos sobre cómo podemos hacer realidad tu próximo proyecto. Nuestro equipo está listo para asesorarte.
+              Permítanos asesorarle sobre la materialización de su próximo proyecto. Nuestro equipo se encuentra a su entera disposición.
             </p>
             <Link href="/contacto">
               <Button

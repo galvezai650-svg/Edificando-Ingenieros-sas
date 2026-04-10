@@ -161,7 +161,7 @@ function HeroSection() {
               href="/proyectos"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-brand to-brand-dark hover:from-brand-dark hover:to-brand-700 text-white px-8 py-4 rounded-full font-semibold text-sm shadow-2xl shadow-brand/30 hover:shadow-brand/50 transition-all duration-300 hover:scale-105"
             >
-              Ver Proyectos
+              Consulte Nuestros Proyectos
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
@@ -169,7 +169,7 @@ function HeroSection() {
               className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 hover:border-brand/50 text-white px-8 py-4 rounded-full font-semibold text-sm transition-all duration-300 backdrop-blur-sm"
             >
               <Phone className="w-4 h-4" />
-              Cotizar Ahora
+              Solicitar Cotización
             </Link>
           </motion.div>
         </div>
@@ -181,7 +181,7 @@ function HeroSection() {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <span className="text-white/30 text-xs tracking-widest uppercase">Scroll</span>
+        <span className="text-white/30 text-xs tracking-widest uppercase">Desplácese</span>
         <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1.5">
           <motion.div
             className="w-1.5 h-1.5 rounded-full bg-brand"
@@ -199,8 +199,8 @@ function HeroSection() {
 // ═══════════════════════════════════════════════════════════
 function MarqueeSection() {
   const items = [
-    'Constructora Premium', 'Ingeniería Civil', 'Edificaciones', 'Infraestructura',
-    'Vivienda', 'Pavimentación', 'Diseño Estructural', 'Acueductos',
+    'Constructora Especializada de Primer Orden', 'Ingeniería Civil', 'Edificaciones', 'Infraestructura',
+    'Desarrollo Inmobiliario', 'Pavimentación', 'Diseño Estructural', 'Sistemas de Acueducto',
   ]
   const doubled = [...items, ...items]
   return (
@@ -222,10 +222,10 @@ function MarqueeSection() {
 // ═══════════════════════════════════════════════════════════
 function AboutPreview() {
   const features = [
-    { icon: Target, label: 'Precisión' },
-    { icon: Shield, label: 'Garantía' },
-    { icon: Zap, label: 'Eficiencia' },
-    { icon: Lightbulb, label: 'Innovación' },
+    { icon: Target, label: 'Rigor Técnico' },
+    { icon: Shield, label: 'Garantía de Calidad' },
+    { icon: Zap, label: 'Eficiencia Operativa' },
+    { icon: Lightbulb, label: 'Innovación Permanente' },
   ]
 
   return (
@@ -263,21 +263,21 @@ function AboutPreview() {
             transition={{ ...smoothTransition, delay: 0.08 }}
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-50 text-brand-dark rounded-full text-xs font-semibold mb-6">
-              SOBRE NOSOTROS
+              SOBRE NUESTRA FIRMA
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0a1628] mb-6 leading-tight">
               Construyendo Sueños,{' '}
               <span className="text-brand">Forjando Futuros</span>
             </h2>
             <p className="text-gray-500 leading-relaxed mb-4 text-lg">
-              En <strong className="text-[#0a1628]">Edificando Ingenieros</strong>, somos una empresa colombiana 
-              con más de una década de experiencia en el sector de la construcción e ingeniería civil. 
-              Hemos ejecutado más de 110 proyectos entre 2013 y 2024.
+              <strong className="text-[#0a1628]">Edificando Ingenieros</strong> es una firma colombiana 
+              con más de una década de trayectoria en el ámbito de la construcción y la ingeniería civil. 
+              A la fecha, hemos ejecutado más de ciento diez proyectos entre los años 2013 y 2024.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
               Con presencia en Manizales, Chinchiná, Villamaría, Palestina, Aranzazu y Pereira, 
-              trabajamos tanto con el sector público (Alcaldías, Aquamaná E.S.P.) como con el sector privado,
-              aplicando las mejores prácticas para garantizar resultados de excelencia.
+              desarrollamos nuestra labor tanto con el sector público (entidades municipales, Aquamaná E.S.P.) como con el sector privado,
+              aplicando las más rigurosas prácticas para asegurar resultados de excelencia.
             </p>
 
             {/* Feature pills */}
@@ -301,7 +301,7 @@ function AboutPreview() {
               href="/nosotros"
               className="inline-flex items-center gap-2 text-brand-dark font-semibold group hover:gap-3 transition-all duration-300"
             >
-              Conoce Más de Nosotros
+              Conozca más acerca de nuestra firma
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
@@ -338,7 +338,7 @@ function ServicesPreview() {
             Soluciones de <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-brand-lighter">Ingeniería</span> Integral
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-lg">
-            Ofrecemos una amplia gama de servicios para proyectos de cualquier envergadura.
+            Tenemos el agrado de ofrecerle un amplio portafolio de servicios para proyectos de toda envergadura.
           </p>
         </motion.div>
 
@@ -368,7 +368,7 @@ function ServicesPreview() {
                     </div>
                   </div>
                   <div className="absolute top-4 right-4 px-3 py-1 bg-white/10 backdrop-blur-sm text-white text-xs rounded-full font-medium">
-                    {service.projects} proyectos
+                    {service.projects} obras ejecutadas
                   </div>
                 </div>
 
@@ -393,7 +393,7 @@ function ServicesPreview() {
                     ))}
                     {service.features.length > 3 && (
                       <span className="px-2.5 py-1 bg-brand/10 text-brand-light text-[10px] rounded-lg font-medium">
-                        +{service.features.length - 3} más
+                        +{service.features.length - 3} adicionales
                       </span>
                     )}
                   </div>
@@ -415,7 +415,7 @@ function ServicesPreview() {
             href="/servicios"
             className="inline-flex items-center gap-2 bg-brand/10 border border-brand/20 hover:bg-brand hover:border-brand text-brand-light hover:text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-brand/30"
           >
-            Ver Todos los Servicios
+            Consulte Nuestros Servicios
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
@@ -441,13 +441,13 @@ function ProjectsPreview() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-50 text-brand-dark rounded-full text-xs font-semibold mb-6">
             <Building2 className="w-3.5 h-3.5" />
-            PORTAFOLIO
+            PORTAFOLIO DE PROYECTOS
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0a1628] mb-4">
-            Proyectos que <span className="text-brand">Transforman</span>
+            Proyectos que <span className="text-brand">Transforman Territorios</span>
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-            Conoce algunos de los proyectos que reflejan nuestro compromiso con la excelencia.
+            Le invitamos a conocer una selección de proyectos que dan cuenta de nuestro compromiso inquebrantable con la excelencia.
           </p>
         </motion.div>
 
@@ -521,7 +521,7 @@ function ProjectsPreview() {
             href="/proyectos"
             className="inline-flex items-center gap-2 bg-[#0a1628] hover:bg-[#0f2340] text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:scale-105"
           >
-            Ver Todos los Proyectos
+            Consulte Nuestro Portafolio Completo
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
@@ -547,13 +547,13 @@ function ProcessPreview() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-50 text-brand-dark rounded-full text-xs font-semibold mb-6">
             <PenTool className="w-3.5 h-3.5" />
-            NUESTRO PROCESO
+            NUESTRA METODOLOGÍA
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0a1628] mb-4">
-            Cómo <span className="text-brand">Trabajamos</span>
+            Nuestra <span className="text-brand">Metodología de Trabajo</span>
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-            Un proceso claro y transparente para garantizar el éxito de tu proyecto.
+            Una metodología clara y transparente concebida para asegurar el éxito de su proyecto.
           </p>
         </motion.div>
 
@@ -606,7 +606,7 @@ function ProcessPreview() {
             href="/proceso"
             className="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-brand/30 hover:scale-105"
           >
-            Ver Proceso Completo
+            Consulte Nuestra Metodología Completa
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
@@ -638,13 +638,13 @@ function TestimonialsSection() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-xs font-semibold mb-6 backdrop-blur-sm">
             <MessageCircle className="w-3.5 h-3.5" />
-            TESTIMONIOS
+            TESTIMONIOS DE NUESTROS CLIENTES
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Lo que Dicen Nuestros <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-brand-lighter">Clientes</span>
+            Testimonios de Nuestros <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-brand-lighter">Clientes</span>
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-lg">
-            La satisfacción de nuestros clientes es nuestra mayor motivación.
+            Nos complace que la plena satisfacción de nuestros clientes constituya nuestra principal motivación y mayor respaldo.
           </p>
         </motion.div>
 
@@ -719,10 +719,10 @@ function CTASection() {
           </motion.div>
 
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            ¿Listo para Construir tu Proyecto?
+            ¿Desea emprender la construcción de su proyecto?
           </h2>
           <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10">
-            Conversemos sobre tu idea. Nuestro equipo de expertos está listo para transformar tu visión en realidad.
+            Nos complace invitarle a consultarnos acerca de su iniciativa. Nuestro equipo de profesionales altamente calificados se encuentra a su entera disposición para materializar su visión.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -738,7 +738,7 @@ function CTASection() {
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm"
             >
               <Building2 className="w-4 h-4" />
-              Ver Proyectos
+              Consulte Nuestros Proyectos
             </Link>
           </div>
 
@@ -771,21 +771,21 @@ function GalleryCarousel() {
     {
       image: '/images/gallery-1.jpg',
       title: 'Vista Panorámica del Proyecto',
-      subtitle: 'Infraestructura residencial en el Eje Cafetero',
+      subtitle: 'Infraestructura residencial en el Eje Cafetero colombiano',
     },
     {
       image: '/images/gallery-2.jpg',
-      title: 'Pavimentación en Proceso',
-      subtitle: 'Mejoramiento vial con tecnología de punta',
+      title: 'Pavimentación en Ejecución',
+      subtitle: 'Mejoramiento vial con tecnología avanzada',
     },
     {
       image: '/images/gallery-3.jpg',
       title: 'Construcción de Vías',
-      subtitle: 'Obra de infraestructura para la comunidad',
+      subtitle: 'Obra de infraestructura para el desarrollo comunitario',
     },
     {
       image: '/images/gallery-4.jpg',
-      title: 'Nuestro Equipo',
+      title: 'Nuestro Equipo de Trabajo',
       subtitle: 'Profesionales comprometidos con la excelencia',
     },
   ]
@@ -863,7 +863,7 @@ function GalleryCarousel() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-brand-lighter">Proyectos</span>
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-lg">
-            Imágenes reales de nuestras obras en ejecución, reflejando nuestro compromiso con la calidad.
+            Registro fotográfico de nuestras obras en ejecución, que da fiel testimonio de nuestro irrestricto compromiso con la calidad.
           </p>
         </motion.div>
 
@@ -916,14 +916,14 @@ function GalleryCarousel() {
             <button
               onClick={goPrev}
               className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/30 backdrop-blur-md border border-white/10 text-white/80 hover:bg-brand/80 hover:text-white hover:border-brand-light/30 transition-all duration-300 flex items-center justify-center z-20 group"
-              aria-label="Anterior"
+              aria-label="Diapositiva anterior"
             >
               <ArrowLeft className="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-0.5 transition-transform" />
             </button>
             <button
               onClick={goNext}
               className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/30 backdrop-blur-md border border-white/10 text-white/80 hover:bg-brand/80 hover:text-white hover:border-brand-light/30 transition-all duration-300 flex items-center justify-center z-20 group"
-              aria-label="Siguiente"
+              aria-label="Diapositiva siguiente"
             >
               <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-0.5 transition-transform" />
             </button>
@@ -942,7 +942,7 @@ function GalleryCarousel() {
                     ? 'bg-brand shadow-lg shadow-brand/40'
                     : 'bg-white/20 hover:bg-white/40'
                 }`}
-                aria-label={`Ir a imagen ${i + 1}`}
+                aria-label={`Desplazarse a la imagen ${i + 1}`}
               />
             ))}
           </div>

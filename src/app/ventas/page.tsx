@@ -85,7 +85,7 @@ export default function VentasPage() {
             transition={{ ease, duration: 0.7, delay: 0.4 }}
             className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            Próximamente podrás encontrar propiedades en venta. Estamos preparando algo increíble para ti.
+            En breve podrá consultar propiedades disponibles en venta. Estamos preparando una propuesta de valor excepcional para usted.
           </motion.p>
 
           {/* Progress bar with shimmer */}
@@ -140,7 +140,7 @@ export default function VentasPage() {
             <Button asChild className="bg-white/10 hover:bg-white/20 text-white rounded-full px-8 h-12 border border-white/20 backdrop-blur-sm">
               <Link href="/">
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Volver al Inicio
+                Regresar al Inicio
               </Link>
             </Button>
           </motion.div>
